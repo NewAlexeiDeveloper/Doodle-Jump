@@ -16,7 +16,7 @@ body {
 .board {
   position: relative;
   width: 70%;
-  height: 600px;
+  height: inherit;
   background-color: rgb(172, 152, 152);
 }
 
