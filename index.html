@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="board"></div>
+
+    <div class="playerPanel">
+        <div class="results">
+            <div class="col-12 text-wrap text-center mb-2">Your record: <span id="record"></span></div>
+            <div class="col-12 text-wrap text-center">The result for this game: <span id="currentResult"></span></div>
+        </div>
+
+        <div class="gameSettings">
+            <div id="platformSpeedDiv">
+                <span>Platforms' speed</span>
+                <select id="platformSpeed" class="form-select form-select-sm">
+                    <option value="4">Slow</option>
+                    <option value="10" selected>Medium</option>
+                    <option value="15">Fast</option>
+                    <option value="20">Rocket</option>
+                </select>
+            </div>
+
+            <div id="divForDoodlerSpeed">
+                <span>Doodler's speed</span>
+                <select id="doodlerSpeed" class="form-select form-select-sm">
+                    <option value="6">Slow</option>
+                    <option value="10" selected>Medium</option>
+                    <option value="14">Fast</option>
+                    <option value="20">Rocket</option>
+                </select>
+            </div>
+
+            <div class="permissionForFakePlatform">
+                <span>Fake platforms</span>
+                <select id="fakePlatform" class="form-select form-select-sm">
+                    <option value="yes" selected>Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <button id="startGame" class="col-12 mt-5 btn btn-primary">
+                Start a game
+            </button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
